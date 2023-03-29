@@ -16,9 +16,9 @@ from split import TG_SPLIT_SIZE
 
 
 # app
-bot_token = os.environ.get("TOKEN", "") 
-api_hash = os.environ.get("HASH", "") 
-api_id = os.environ.get("ID", "")
+bot_token = os.environ.get("TOKEN", "6102213171:AAFqrMySBjy18lbZfXbZnLJapYEbQbFIhZw") 
+api_hash = os.environ.get("HASH", "926c0e413170fdbcd92beb1b271ebed0") 
+api_id = os.environ.get("ID", "26852014")
 app = Client("my_bot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 
 # preiumum
@@ -26,7 +26,7 @@ from split import ss, temp_channel, isPremmium
 if isPremmium: acc = Client("myacc", api_id=api_id, api_hash=api_hash, session_string=ss)
 
 # optionals
-auth = os.environ.get("AUTH", "")
+auth = os.environ.get("AUTH", "1961852781")
 ban = os.environ.get("BAN", "")
 from mdisk import iswin
 
