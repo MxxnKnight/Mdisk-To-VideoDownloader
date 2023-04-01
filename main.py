@@ -349,6 +349,6 @@ def mdisktext(client: pyrogram.client.Client, message: pyrogram.types.messages_a
 if __name__ == '__main__': 
     port = int(os.environ.get('PORT', 5000))
     app = Client("my_bot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
-    app.run(host='0.0.0.0', port=port)
+    app.run(port=port)
 
 
