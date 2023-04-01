@@ -351,5 +351,4 @@ if __name__ == '__main__':
     app = Client("my_bot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
     app.run(host='0.0.0.0', port=port)
 
-# polling
-app.run()
+
