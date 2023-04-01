@@ -346,11 +346,10 @@ def mdisktext(client: pyrogram.client.Client, message: pyrogram.types.messages_a
     else:
         app.send_message(message.chat.id, '**Send only __MDisk Link__**',reply_to_message_id=message.id)
 
-
-# polling
-app.run()
-
 if __name__ == '__main__': 
     port = int(os.environ.get('PORT', 5000))
     app = Bot()
     app.run(host='0.0.0.0', port=port)
+
+# polling
+app.run()
