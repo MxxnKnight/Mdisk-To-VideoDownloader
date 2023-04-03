@@ -1,1 +1,1 @@
-web: python3 main.py --port $PORT --startup-timeout 120000.
+worker: python3 main.py
