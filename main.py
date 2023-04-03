@@ -35,27 +35,27 @@ from mdisk import iswin
 def echo(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message):
 
     if not checkuser(message):
-        app.send_message(message.chat.id, '__You are either not **Authorized** or **Banned**__', reply_to_message_id=message.id,reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("☆ ᴏᴡɴᴇʀ ☆", url="https://t.me/Mxxn_Knight")]]))
+        app.send_message(message.chat.id, '**ʏᴏᴜ ᴀʀᴇ ᴇɪᴛʜᴇʀ ɴᴏᴛ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴏʀ ʙᴀɴɴᴇᴅ**', reply_to_message_id=message.id,reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("☆    ᴏᴡɴᴇʀ    ☆", url="https://t.me/Mxxn_Knight")]]))
         return
 
-    app.send_message(message.chat.id, '**ʜɪ {},ɪ ᴀᴍ ᴍᴅɪsᴋ ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ, ʏᴏᴜ ᴄᴀɴ ᴡᴀᴛᴄʜ ᴠɪᴅᴇᴏs ᴡɪᴛʜᴏᴜᴛ ᴍx ᴘʟᴀʏᴇʀ.\n__sᴇɴᴛ ᴍᴇ ᴛʜᴇ ʟɪɴᴋ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ...__**',reply_to_message_id=message.id,
-    reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("☆ ᴏᴡɴᴇʀ ☆ ", url="https://t.me/Mxxn_Knight")]]))
+    app.send_message(message.chat.id, '**ʜɪ ,ɪ ᴀᴍ ᴍᴅɪsᴋ ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ, ʏᴏᴜ ᴄᴀɴ ᴡᴀᴛᴄʜ ᴠɪᴅᴇᴏs ᴡɪᴛʜᴏᴜᴛ ᴍx ᴘʟᴀʏᴇʀ.\n sᴇɴᴛ ᴍᴇ ᴛʜᴇ ʟɪɴᴋ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ...**',reply_to_message_id=message.id,
+    reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("☆    ᴏᴡɴᴇʀ    ☆ ", url="https://t.me/Mxxn_Knight")]]))
 
 # help command
 @app.on_message(filters.command(["help"]))
 def help(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message):
     
     if not checkuser(message):
-        app.send_message(message.chat.id, '__You are either not **Authorized** or **Banned**__',reply_to_message_id=message.id)
+        app.send_message(message.chat.id, '**ʏᴏᴜ ᴀʀᴇ ᴇɪᴛʜᴇʀ ɴᴏᴛ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴏʀ ʙᴀɴɴᴇᴅ**',reply_to_message_id=message.id)
         return
     
-    helpmessage = """__**/start** - basic usage
-**/help** - this message
-**/mdisk mdisklink** - usage
-**/thumb** - reply to a image document of size less than 200KB to set it as Thumbnail ( you can also send image as a photo to set it as Thumbnail automatically )
-**/remove** - remove Thumbnail
-**/show** - show Thumbnail
-**/change** - change upload mode ( default mode is Document )__"""
+    helpmessage = """**/sᴛᴀʀᴛ   - ᴄʜᴇᴄᴋ ᴀʟɪᴠᴇ**
+**/ʜᴇʟᴘ   - ᴛʜɪs ᴍᴇssᴀɢᴇ**
+**/ᴍᴅɪsᴋ ᴍᴅɪsᴋʟɪɴᴋ - ᴜsᴀɢᴇ**
+**/ᴛʜᴜᴍʙ - ʀᴇᴘʟʏ ᴛᴏ ᴀ ɪᴍᴀɢᴇ ᴅᴏᴄᴜᴍᴇɴᴛ ᴏғ sɪᴢᴇ ʟᴇss ᴛʜᴀɴ 200ᴋʙ ᴛᴏ sᴇᴛ ɪᴛ ᴀs ᴛʜᴜᴍʙɴᴀɪʟ ( ʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ sᴇɴᴅ ɪᴍᴀɢᴇ ᴀs ᴀ ᴘʜᴏᴛᴏ ᴛᴏ sᴇᴛ ɪᴛ ᴀs ᴛʜᴜᴍʙɴᴀɪʟ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ )**
+**/ʀᴇᴍᴏᴠᴇ - ʀᴇᴍᴏᴠᴇ ᴛʜᴜᴍʙɴᴀɪʟ**
+**/sʜᴏᴡ   - sʜᴏᴡ ᴛʜᴜᴍʙɴᴀɪʟ**
+**/ᴄʜᴀɴɢᴇ - ᴄʜᴀɴɢᴇ ᴜᴘʟᴏᴀᴅ ᴍᴏᴅᴇ (ᴅᴇғᴀᴜʟᴛ ᴍᴏᴅ ɪs ᴅᴏᴄᴜᴍᴇɴᴛ)**"""
     app.send_message(message.chat.id, helpmessage, reply_to_message_id=message.id)
 
 
@@ -92,10 +92,10 @@ def status(folder,message,fsize):
             size = result.stdout[:-(length+2)]
         else:
             os.system(f"dir /a/s {folder} > tempS-{message.id}.txt")
-            size = str(int(open(f"tempS-{message.id}.txt","r").readlines()[-2].split()[2].replace(",","")) // 1000000) + "MB "
+            size = str(int(open(f"tempS-{message.id}.txt","r").readlines()[-2].split()[2].replace(",","")) // 1000000) + "ᴍʙ "
 
         try:
-            app.edit_message_text(message.chat.id, message.id, f"__Downloaded__ : **{size} **__of__**  {fsize:.1f}M**")
+            app.edit_message_text(message.chat.id, message.id, f"__ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ__ : **{size} **__ᴏғ__**  {fsize:.1f}M**")
             time.sleep(10)
         except:
             time.sleep(5)
@@ -114,7 +114,7 @@ def upstatus(statusfile,message):
         with open(statusfile,"r") as upread:
             txt = upread.read()
         try:
-            app.edit_message_text(message.chat.id, message.id, f"__Uploaded__ : **{txt}**")
+            app.edit_message_text(message.chat.id, message.id, f"__ᴜᴘʟᴏᴀᴅᴇᴅ__ : **{txt}**")
             time.sleep(10)
         except:
             time.sleep(5)
@@ -130,10 +130,10 @@ def progress(current, total, message):
 def down(message,link):
 
     # checking link and download with progress thread
-    msg = app.send_message(message.chat.id, '__Downloading__', reply_to_message_id=message.id)
+    msg = app.send_message(message.chat.id, '__ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ__', reply_to_message_id=message.id)
     size = mdisk.getsize(link)
     if size == 0:
-        app.edit_message_text(message.chat.id, msg.id,"__**Invalid Link**__")
+        app.edit_message_text(message.chat.id, msg.id,"__**ɪɴᴠᴀʟɪᴅ ʟɪɴᴋ**__")
         return
     sta = threading.Thread(target=lambda:status(str(message.id),msg,size),daemon=True)
     sta.start()
@@ -141,24 +141,24 @@ def down(message,link):
     # checking link and download and merge
     file,check,filename = mdisk.mdow(link,message)
     if file == None:
-        app.edit_message_text(message.chat.id, msg.id,"__**Invalid Link**__")
+        app.edit_message_text(message.chat.id, msg.id,"__**ɪɴᴠᴀʟɪᴅ ʟɪɴᴋ**__")
         return
 
     # checking if its a link returned
     if check == -1:
-        app.edit_message_text(message.chat.id, msg.id,f"__**Can't Download File but here is the Download Link : {file}**__")
+        app.edit_message_text(message.chat.id, msg.id,f"__**ᴄᴀɴ'ᴛ ᴅᴏᴡɴʟᴏᴀᴅ ғɪʟᴇ ʙᴜᴛ ʜᴇʀᴇ ɪs ᴛʜᴇ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ: {file}**__")
         os.rmdir(str(message.id))
         return
 
     # checking size
     size = split.get_path_size(file)
     if(size > TG_SPLIT_SIZE):
-        app.edit_message_text(message.chat.id, msg.id, "__Splitting__")
+        app.edit_message_text(message.chat.id, msg.id, "__sᴘʟɪᴛᴛɪɴɢ__")
         flist = split.split_file(file,size,file,".", TG_SPLIT_SIZE)
         os.remove(file) 
     else:
         flist = [file]
-    app.edit_message_text(message.chat.id, msg.id, "__Uploading__")
+    app.edit_message_text(message.chat.id, msg.id, "__ᴜᴘʟᴏᴀᴅɪɴɢ__")
     i = 1
 
     # checking thumbline
@@ -177,7 +177,7 @@ def down(message,link):
 
         # checking file existence
         if not os.path.exists(ele):
-            app.send_message(message.chat.id,"**Error in Merging File**",reply_to_message_id=message.id)
+            app.send_message(message.chat.id,"**ᴇʀʀᴏʀ ɪɴ ᴍᴇʀɢɪɴɢ ғɪʟᴇ**",reply_to_message_id=message.id)
             return
             
         # check if it's multi part
@@ -206,7 +206,7 @@ def down(message,link):
         
     # checking if restriction is removed    
     if check == 0:
-        app.send_message(message.chat.id,"__Can't remove the **restriction**, you have to use **MX player** to play this **video**\n\nThis happens because either the **file** length is **too small** or **video** doesn't have separate **audio layer**__",reply_to_message_id=message.id)
+        app.send_message(message.chat.id,"__ᴄᴀɴ'ᴛ ʀᴇᴍᴏᴠᴇ ᴛʜᴇ **ʀᴇsᴛʀɪᴄᴛɪᴏɴ**, ʏᴏᴜ ʜᴀᴠᴇ ᴛᴏ ᴜsᴇ**ᴍx ᴘʟᴀʏᴇʀ** ᴛᴏ ᴘʟᴀʏ ᴛʜɪs**ᴠɪᴅᴇᴏ**\n\nᴛʜɪs ʜᴀᴘᴘᴇɴs ʙᴇᴄᴀᴜsᴇ ᴇɪᴛʜᴇʀ ᴛʜᴇ **ғɪʟᴇ** ʟᴇɴɢᴛʜ ɪs**ᴛᴏᴏ sᴍᴀʟʟ** ᴏʀ **ᴠɪᴅᴇᴏ** ᴅᴏᴇsɴ'ᴛ ʜᴀᴠᴇ sᴇᴘᴀʀᴀᴛᴇ**ᴀᴜᴅɪᴏ ʟᴀʏᴇʀ**__",reply_to_message_id=message.id)
     if os.path.exists(f'{message.id}upstatus.txt'):
         os.remove(f'{message.id}upstatus.txt')
     app.delete_messages(message.chat.id,message_ids=[msg.id])
@@ -217,7 +217,7 @@ def down(message,link):
 def mdiskdown(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message):
     
     if not checkuser(message):
-        app.send_message(message.chat.id, '__You are either not **Authorized** or **Banned**__',reply_to_message_id=message.id)
+        app.send_message(message.chat.id, '**ʏᴏᴜ ᴀʀᴇ ᴇɪᴛʜᴇʀ ɴᴏᴛ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴏʀ ʙᴀɴɴᴇᴅ**',reply_to_message_id=message.id)
         return
 
     try:
@@ -229,7 +229,7 @@ def mdiskdown(client: pyrogram.client.Client, message: pyrogram.types.messages_a
     except:
         pass
 
-    app.send_message(message.chat.id, '**Send only __MDisk Link__ with command followed by the link**',reply_to_message_id=message.id)
+    app.send_message(message.chat.id, '**sᴇɴᴅ ᴏɴʟʏ __ᴍᴅɪsᴋ ʟɪɴᴋ__ ᴡɪᴛʜ ᴄᴏᴍᴍᴀɴᴅ ғᴏʟʟᴏᴡᴇᴅ ʙʏ ᴛʜᴇ ʟɪɴᴋ**',reply_to_message_id=message.id)
 
 
 # thumb command
@@ -237,21 +237,21 @@ def mdiskdown(client: pyrogram.client.Client, message: pyrogram.types.messages_a
 def thumb(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message):
     
     if not checkuser(message):
-        app.send_message(message.chat.id, '__You are either not **Authorized** or **Banned**__',reply_to_message_id=message.id)
+        app.send_message(message.chat.id, '**ʏᴏᴜ ᴀʀᴇ ᴇɪᴛʜᴇʀ ɴᴏᴛ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴏʀ ʙᴀɴɴᴇᴅ**',reply_to_message_id=message.id)
         return
 
     try:
         if int(message.reply_to_message.document.file_size) > 200000:
-            app.send_message(message.chat.id, '**Thumbnail size allowed is < 200 KB**',reply_to_message_id=message.id)
+            app.send_message(message.chat.id, '**ᴛʜᴜᴍʙɴᴀɪʟ sɪᴢᴇ ɪs ᴀʟʟᴏᴡᴇᴅ ɪs < 200 ᴋʙ**',reply_to_message_id=message.id)
             return
 
         msg = app.get_messages(message.chat.id, int(message.reply_to_message.id))
         file = app.download_media(msg)
         os.rename(file,f'{message.from_user.id}-thumb.jpg')
-        app.send_message(message.chat.id, '**Thumbnail is Set**',reply_to_message_id=message.id)
+        app.send_message(message.chat.id, '**ᴛʜᴜᴍʙɴᴀɪʟ ɪs sᴇᴛ**',reply_to_message_id=message.id)
 
     except:
-        app.send_message(message.chat.id, '**reply __/thumb__ to a image document of size less than 200KB**',reply_to_message_id=message.id)
+        app.send_message(message.chat.id, '**ʀᴇᴘʟʏ __/ᴛʜᴜᴍɴ__ ᴛᴏ ᴀ ɪᴍᴀɢᴇ ᴅᴏᴄᴜᴍᴇɴᴛ ᴏғ sɪᴢᴇ ʟᴇss ᴛʜᴀɴ 200ᴋʙ**',reply_to_message_id=message.id)
 
 
 # show thumb command
@@ -259,13 +259,13 @@ def thumb(client: pyrogram.client.Client, message: pyrogram.types.messages_and_m
 def showthumb(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message):
     
     if not checkuser(message):
-        app.send_message(message.chat.id, '__You are either not **Authorized** or **Banned**__',reply_to_message_id=message.id)
+        app.send_message(message.chat.id, '**ʏᴏᴜ ᴀʀᴇ ᴇɪᴛʜᴇʀ ɴᴏᴛ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴏʀ ʙᴀɴɴᴇᴅ**',reply_to_message_id=message.id)
         return
     
     if os.path.exists(f'{message.from_user.id}-thumb.jpg'):
         app.send_photo(message.chat.id,photo=f'{message.from_user.id}-thumb.jpg',reply_to_message_id=message.id)
     else:
-        app.send_message(message.chat.id, '**Thumbnail is not Set**',reply_to_message_id=message.id)
+        app.send_message(message.chat.id, '**ᴛʜᴜᴍʙɴᴀɪʟ ɪs ɴᴏᴛ sᴇᴛ**',reply_to_message_id=message.id)
 
 
 # remove thumbline command
@@ -273,15 +273,15 @@ def showthumb(client: pyrogram.client.Client, message: pyrogram.types.messages_a
 def removethumb(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message):
     
     if not checkuser(message):
-        app.send_message(message.chat.id, '__You are either not **Authorized** or **Banned**__',reply_to_message_id=message.id)
+        app.send_message(message.chat.id, '**ʏᴏᴜ ᴀʀᴇ ᴇɪᴛʜᴇʀ ɴᴏᴛ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴏʀ ʙᴀɴɴᴇᴅ**',reply_to_message_id=message.id)
         return
     
     
     if os.path.exists(f'{message.from_user.id}-thumb.jpg'):
         os.remove(f'{message.from_user.id}-thumb.jpg')
-        app.send_message(message.chat.id, '**Thumbnail is Removed**',reply_to_message_id=message.id)
+        app.send_message(message.chat.id, '**ᴛʜᴜᴍʙɴᴀɪʟ ɪs ʀᴇᴍᴏᴠᴇᴅ**',reply_to_message_id=message.id)
     else:
-        app.send_message(message.chat.id, '**Thumbnail is not Set**',reply_to_message_id=message.id)
+        app.send_message(message.chat.id, '**ᴛʜᴜᴍʙɴᴀɪʟ ɪs ɴᴏᴛ sᴇᴛ**',reply_to_message_id=message.id)
 
 
 # thumbline
@@ -289,12 +289,12 @@ def removethumb(client: pyrogram.client.Client, message: pyrogram.types.messages
 def ptumb(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message):
     
     if not checkuser(message):
-        app.send_message(message.chat.id, '__You are either not **Authorized** or **Banned**__',reply_to_message_id=message.id)
+        app.send_message(message.chat.id, '**ʏᴏᴜ ᴀʀᴇ ᴇɪᴛʜᴇʀ ɴᴏᴛ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴏʀ ʙᴀɴɴᴇᴅ**',reply_to_message_id=message.id)
         return
     
     file = app.download_media(message)
     os.rename(file,f'{message.from_user.id}-thumb.jpg')
-    app.send_message(message.chat.id, '**Thumbnail is Set**',reply_to_message_id=message.id)
+    app.send_message(message.chat.id, '**ᴛʜᴜᴍʙɴᴀɪʟ ɪs sᴇᴛ**',reply_to_message_id=message.id)
     
 
 # change mode
@@ -302,15 +302,15 @@ def ptumb(client: pyrogram.client.Client, message: pyrogram.types.messages_and_m
 def change(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message):
     
     if not checkuser(message):
-        app.send_message(message.chat.id, '__You are either not **Authorized** or **Banned**__',reply_to_message_id=message.id)
+        app.send_message(message.chat.id, '**ʏᴏᴜ ᴀʀᴇ ᴇɪᴛʜᴇʀ ɴᴏᴛ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴏʀ ʙᴀɴɴᴇᴅ**',reply_to_message_id=message.id)
         return
     
     info = extras.getdata(str(message.from_user.id))
     extras.swap(str(message.from_user.id))
     if info == "V":
-        app.send_message(message.chat.id, '__Mode changed from **Video** format to **Document** format__',reply_to_message_id=message.id)
+        app.send_message(message.chat.id, '__ᴍᴏᴅᴇ ᴄʜᴀɴɢᴇᴅ ғʀᴏᴍ **ᴠɪᴅᴇᴏ** ғᴏʀᴍᴀᴛ ᴛᴏ**ᴅᴏᴄᴜᴍᴇɴᴛ** ғᴏʀᴍᴀᴛ__',reply_to_message_id=message.id)
     else:
-        app.send_message(message.chat.id, '__Mode changed from **Document** format to **Video** format__',reply_to_message_id=message.id)
+        app.send_message(message.chat.id, '__ᴍᴏᴅᴇ ᴄʜᴀɴɢᴇᴅ ғʀᴏᴍ **ᴅᴏᴄᴜᴍᴇɴᴛ** ғᴏʀᴍᴀᴛ ᴛᴏ **ᴠɪᴅᴇᴏ** ғᴏʀᴍᴀᴛ__',reply_to_message_id=message.id)
 
         
 # multiple links handler
@@ -328,11 +328,11 @@ def mdisktext(client: pyrogram.client.Client, message: pyrogram.types.messages_a
     if isPremmium and message.chat.id == temp_channel: return
 
     if not checkuser(message):
-        app.send_message(message.chat.id, '__You are either not **Authorized** or **Banned**__',reply_to_message_id=message.id)
+        app.send_message(message.chat.id, '**ʏᴏᴜ ᴀʀᴇ ᴇɪᴛʜᴇʀ ɴᴏᴛ ᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴏʀ ʙᴀɴɴᴇᴅ**',reply_to_message_id=message.id)
         return
 
     if message.text[0] == "/":
-        app.send_message(message.chat.id, '**See __/help__**',reply_to_message_id=message.id)
+        app.send_message(message.chat.id, '**sᴇᴇ  __/ʜᴇʟᴘ__**',reply_to_message_id=message.id)
         return
 
     if "https://mdisk.me/" in message.text:
@@ -344,7 +344,7 @@ def mdisktext(client: pyrogram.client.Client, message: pyrogram.types.messages_a
             d = threading.Thread(target=lambda:multilinks(message,links),daemon=True)
             d.start()   
     else:
-        app.send_message(message.chat.id, '**Send only __MDisk Link__**',reply_to_message_id=message.id)
+        app.send_message(message.chat.id, '**sᴇɴᴅ ᴏɴʟʏ __ᴍᴅɪsᴋ ʟɪɴᴋ__**',reply_to_message_id=message.id)
 
 
 app.run()
