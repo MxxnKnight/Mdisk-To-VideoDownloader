@@ -346,8 +346,6 @@ def mdisktext(client: pyrogram.client.Client, message: pyrogram.types.messages_a
     else:
         app.send_message(message.chat.id, '**Send only __MDisk Link__**',reply_to_message_id=message.id)
 
-PORT = environ.get("PORT", "8080")
-
 
 app.run()
 
